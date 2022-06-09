@@ -1,0 +1,21 @@
+﻿<Window x:Class="Nobel_díj_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nobel_díj_WPF"
+        mc:Ignorable="d"
+        Title="Orvosi Nóbel-díjasok" Height="450" Width="500">
+    <Canvas Margin="0,0,2,4">
+        <Label Content="Év:" Canvas.Left="51" Canvas.Top="62" FontSize="20"/>
+        <Label Content="Név:" Canvas.Left="51" Canvas.Top="123" FontSize="20"/>
+        <Label Content="Sz/H:" Canvas.Left="51" Canvas.Top="184" FontSize="20"/>
+        <Label Content="Ország:" Canvas.Left="51" Canvas.Top="242" FontSize="20"/>
+        <TextBox x:Name="YearField" FontSize="20" Canvas.Left="173" TextWrapping="Wrap" Text="" Canvas.Top="66" Width="120"/>
+        <TextBox x:Name="NameField" FontSize="20" Canvas.Left="173" TextWrapping="Wrap" Text="" Canvas.Top="127" Width="274"/>
+        <TextBox x:Name="LifePeriodField" FontSize="20" Canvas.Left="173" TextWrapping="Wrap" Text="" Canvas.Top="188" Width="165"/>
+        <TextBox x:Name="CountryCodeField" FontSize="20" Canvas.Left="173" TextWrapping="Wrap" Text="" Canvas.Top="246" Width="120"/>
+        <Button x:Name="SaveButton" FontSize="20" Content="Adatok mentése" Canvas.Left="139" Canvas.Top="320" Width="199" Click="SaveButton_Click" />
+
+    </Canvas>
+</Window>
